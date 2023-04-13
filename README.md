@@ -6,25 +6,25 @@ API REST para la gestion de la base de datos
 
 #### Home
 
-```http
+```python
   GET /
 ```
 
 #### Documentation
 
-```http
+```python
   GET /docs
 ```
 
 #### Get todas las mediciones
 
-```http
+```python
   GET /fetch/all
 ```
 
 #### POST medicion
 
-```http
+```python
   POST /load/data
 ```
 
