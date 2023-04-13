@@ -1,0 +1,18 @@
+server {
+    server_name 143.244.158.246;
+    location / {
+        include proxy_params;
+        proxy_pass http://127.0.0.1:8000;
+    }
+}
+
+
+
+
+sudo apt install nginx
+sudo nano /etc/nginx/sites-available/co2-control-api
+sudo ln -s /etc/nginx/sites-available/co2-control-api /etc/nginx/sites-enabled/
+sudo systemctl restart nginx.service 
+systemctl status nginx.service 
+pip install gunicorn
+gunicorn -w 4 -k uvicorn.workers.UvicornWorker co2-control-api:app
