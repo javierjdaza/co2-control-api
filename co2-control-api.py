@@ -49,7 +49,7 @@ def home():
                                     <br><strong>CO2 API REST</strong><br>
                                 </h1>
                                 <h3>
-                                    Manage Data Base connecion
+                                    Manage Data Base connection
                                 </h3>
                                 <br>
                                 <h5>
